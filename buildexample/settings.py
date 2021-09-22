@@ -129,7 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Use this code to avoid the psycopg2 / django-heroku error!  
 # Do NOT import django-heroku above!
 try:
-    if '/app' in os.environ['HOME']:
+    if 'HEROKU' in os.environ:
         import django_heroku
         django_heroku.settings(locals())
 except ImportError:
