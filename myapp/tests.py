@@ -9,4 +9,4 @@ class DummyTestCase(TestCase):
         y = 2
     
     def test_dummy_test_case(self):
-        self.assertEqual(1, 1)
+        self.assertEqual(1, 2)
