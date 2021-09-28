@@ -2,6 +2,7 @@ from django.test import TestCase
 
 # Create your tests here.
 
+# SHERRIFF: Dummy test added.
 class DummyTestCase(TestCase):
     def setUp(self):
         x = 1
